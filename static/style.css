@@ -1,0 +1,24 @@
+/* tilt the headings with an angle */
+
+.terpsichorean-text {
+  display: inline-block;
+  transform: rotate(-5deg);
+  transition: transform 0.5s;
+}
+/* on hover rotate 0 degree with transition */
+.terpsichorean-text:hover {
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+#projects {
+  transform: rotate(-5deg);
+  color: white;
+}
+
+#animeGifContainer {
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.57);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}

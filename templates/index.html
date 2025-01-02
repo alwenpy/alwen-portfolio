@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/89bfe51923.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/static/dynamic_styles.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Arvind Srivastav - Portfolio</title>
+  </head>
+  <body class="bg-black text-gray-200 font-sans">
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-lg sticky bottom-0 z-50">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center p-4"
+      >
+        <p class="text-gray-500">© 2024 Made with 🩵 by Arvind(alwen)</p>
+        <nav class="flex flex-wrap space-x-4 mt-2 md:mt-0">
+          <a
+            href="mailto:alwen1928@gmail.com"
+            class="text-gray-300 hover:text-blue-300 transform hover:scale-110 transition-all duration-300"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alwenpy/"
+            target="_blank"
+            class="text-gray-300 hover:text-blue-300 transform hover:scale-110 transition-all duration-300"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/alwenpy"
+            target="_blank"
+            class="text-gray-300 hover:text-blue-300 transform hover:scale-110 transition-all duration-300"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/oyealwen/"
+            target="_blank"
+            class="text-gray-300 hover:text-blue-300 transform hover:scale-110 transition-all duration-300"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Floating Button -->
+    <a
+      href="#footer"
+      id="scrollToFooter"
+      class="fixed transition bottom-24 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-blue-800 transition flex items-center z-50"
+    >
+      <span class="mr-2">↓</span>
+      <span>looking for header?</span>
+    </a>
+
+    <div class="max-w-6xl mx-auto p-6">
+      <section
+        class="bg-center bg-no-repeat bg-blend-multiply h-screen flex items-center justify-center mb-8"
+      >
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-12 lg:py-24">
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            <span class="relative group text-blue-500 terpsichorean-text">
+              Terpsichorean
+              <!-- Tooltip -->
+              <span
+                class="absolute mb-4 invisible tracking-wider group-hover:visible opacity-0 group-hover:opacity-100 w-max bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm rounded-lg py-3 px-4 shadow-lg transition-all duration-300 ease-[cubic-bezier(0.34, 1.56, 0.64, 1)]"
+              >
+                Inspired by the muse of dance.
+              </span>
+            </span>
+            Backend Developer
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          >
+            A Backend Architect fueled by Python’s power and the artistry of
+            dance.
+          </p>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="mb-16">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-3xl font-semibold bg-gradient-to-r from-blue-500 to-blue-700 text-white px-3 py-2 rounded-lg shadow-lg"
+          >
+            About
+          </h2>
+        </div>
+        <div class="text-gray-400 mt-4">
+          Hi, I'm Arvind, a graduate from
+          <span class="text-blue-500">University of Lucknow</span> & a
+          <span class="text-blue-500">Backend developer</span> that loves to
+          play with the tech around. I like Python (and stuff related to it). My
+          journey in <span class="text-blue-500">backend development</span> has
+          majorly been in <span class="text-blue-500">API development</span>.
+          Since I'm an explorer, I've tried my hands on tech such as Django,
+          FastAPI, Flask, AI/ML, Web Scraping, Next.js, Vue.js, Laravel, a bit
+          of Flutter, Firebase, AWS (major services), Redis, Kafka, Postman,
+          tried learning Go too, and wish to add more to the list — pretty
+          versatile, right? Also, I hate Windows!! Linux FTW. I prefer
+          <span class="text-blue-500">Ubuntu.</span><br /><br />
+
+          Well, I'm a <span class="text-blue-500">dancer</span> too, and was the
+          coordinator of the dance club at my University. Dance is one of those
+          things that has a special place in my life. Apart from this, I like
+          <span class="text-blue-500">clicking pictures</span> and
+          <span class="text-blue-500">editing videos</span>.
+        </div>
+      </section>
+      <section id="education" class="mb-16">
+        <!-- Section Title -->
+        <div class="flex items-center justify-between mb-6">
+          <h2
+            class="text-3xl font-semibold bg-gradient-to-r from-blue-500 to-blue-700 text-white px-3 py-2 rounded-lg shadow-lg"
+          >
+            Education
+          </h2>
+        </div>
+        <!-- Cards Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1: B.Tech -->
+          <div
+            class="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">
+              Bachelor of Technology
+            </h3>
+            <p class="text-lg text-gray-300 mb-2">CSE</p>
+            <p class="text-lg font-semibold text-gray-400 mb-2">
+              Faculty of Engineering and Technology
+            </p>
+            <p class="text-xl font-bold text-white mb-2">
+              University of Lucknow
+            </p>
+            <p class="text-lg font-medium text-gray-300">2020 - 2024</p>
+            <p class="text-lg font-medium text-gray-300">8.36 CGPA</p>
+          </div>
+          <!-- Card 2: 12th -->
+          <div
+            class="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">12th Grade</h3>
+            <p class="text-lg text-gray-300 mb-2">
+              Stella Maris Convent School
+            </p>
+            <p class="text-lg font-medium text-gray-300 mb-2">2019</p>
+            <p class="text-lg font-medium text-gray-300">91.4%</p>
+          </div>
+          <!-- Card 3: 10th -->
+          <div
+            class="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">10th Grade</h3>
+            <p class="text-lg text-gray-300 mb-2">
+              Stella Maris Convent School
+            </p>
+            <p class="text-lg font-medium text-gray-300 mb-2">2017</p>
+            <p class="text-lg font-medium text-gray-300">9.8 CGPA</p>
+          </div>
+        </div>
+      </section>
+      <div class="flex items-center justify-center min-h-[40vh]" id="surprise">
+        <button
+          class="w-72 h-20 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold text-2xl flex items-center justify-center rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        >
+          Surprise Me!!
+        </button>
+      </div>
+
+      <section id="anime" class="mb-16 hidden">
+        <div class="flex items-center justify-between mb-6">
+          <h2
+            class="text-3xl font-semibold bg-gradient-to-r from-purple-500 to-purple-700 text-white px-3 py-2 rounded-lg shadow-lg"
+          >
+            Anime Machine
+          </h2>
+          <button
+            id="generateAnimeBtn"
+            class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 transform transition duration-300"
+          >
+            Generate
+          </button>
+        </div>
+        <div
+          id="animeGifContainer"
+          class="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-lg shadow-md flex justify-center items-center min-h-[300px]"
+        ></div>
+      </section>
+
+      <section id="work" class="mb-16">
+        <div id="education-section" class="flex items-center justify-between">
+          <h2
+            class="text-3xl font-semibold bg-gradient-to-r from-blue-500 to-blue-700 text-white px-3 py-2 rounded-lg shadow-lg"
+          >
+            Work Experience
+          </h2>
+        </div>
+        <ol class="relative border-l border-gray-200 dark:border-gray-700 pt-8">
+          <!-- Tech BRJ -->
+          <li class="mb-10 ml-6">
+            <span
+              class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            >
+              <svg
+                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                />
+              </svg>
+            </span>
+            <h3
+              class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+            >
+              Tech BRJ - Backend Developer
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+              >Sep 2024 - Present</time
+            >
+            <ul class="text-base font-normal text-gray-500 dark:text-gray-400">
+              <li>
+                Responsible for developing scalable APIs using Django and Django
+                Rest Framework to support company applications.
+              </li>
+              <li>
+                Optimizing backend services to enhance performance and
+                scalability of internal systems.
+              </li>
+              <li>
+                Leveraging AWS for storage, PythonAnywhere for hosting, and
+                secure deployment, ensuring reliable and scalable services.
+              </li>
+            </ul>
+          </li>
+
+          <!-- ETHNO -->
+          <li class="mb-10 ml-6">
+            <span
+              class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            >
+              <svg
+                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                />
+              </svg>
+            </span>
+            <h3
+              class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+            >
+              ETHNO - An E-Commerce Marketplace
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+              >Sep 2023 - Nov 2023</time
+            >
+            <ul class="text-base font-normal text-gray-500 dark:text-gray-400">
+              <li>
+                Developed the backend of an e-commerce website using Django,
+                implementing core features like login/signup, add-to-cart, and
+                wish listing.
+              </li>
+              <li>
+                Integrated a machine learning model for product recommendations
+                using Python libraries such as Seaborn, pandas, and Matplotlib
+                to enhance user experience.
+              </li>
+            </ul>
+          </li>
+
+          <!-- MAXX CAPITAL -->
+          <li class="ml-6">
+            <span
+              class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+            >
+              <svg
+                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                />
+              </svg>
+            </span>
+            <h3
+              class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+            >
+              MAXX CAPITAL - Real Estate Consultancy Firm
+            </h3>
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+              >Jan 2024 - May 2024</time
+            >
+            <ul class="text-base font-normal text-gray-500 dark:text-gray-400">
+              <li>
+                Developed the website using NextJS with Firebase for
+                authentication, storage, and database management, and integrated
+                ID verification via the Surepass API.
+              </li>
+              <li>
+                Built an admin panel using Material UI, allowing CRUD operations
+                for properties, forms, and users and analytics for monitoring
+                site usage.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills" class="mb-16">
+        <!-- Section Title -->
+        <div class="flex items-center justify-between mb-6">
+          <h2
+            class="text-3xl font-semibold bg-gradient-to-r from-blue-500 to-blue-700 text-white px-3 py-2 rounded-lg shadow-lg"
+          >
+            Skills
+          </h2>
+        </div>
+        <!-- Cards Container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Left Card -->
+          <div
+            class="bg-gradient-to-b from-gray-800 via-gray-900 to-black p-6 rounded-lg shadow-md text-gray-300"
+          >
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">
+              Languages and Frameworks
+            </h3>
+            <p class="mb-4">
+              Python, Django, Flask,FAST API, JavaScript, Next.js, Linux Shell
+            </p>
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">
+              Data Science
+            </h3>
+            <p>Numpy, Pandas, Matplotlib</p>
+          </div>
+          <!-- Right Card -->
+          <div
+            class="bg-gradient-to-b from-gray-800 via-gray-900 to-black p-6 rounded-lg shadow-md text-gray-300"
+          >
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">Tools</h3>
+            <p class="mb-4">
+              Postman, Firebase, RESTful API, Git/GitHub, Beautiful Soup, Apache
+              Kafka, Redis, Django Rest Framework
+            </p>
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">
+              AWS Services
+            </h3>
+            <p>EC2, RDS, S3, IAM, VPC</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="mb-16">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-3xl font-semibold bg-gradient-to-r from-blue-500 to-blue-700 text-white px-3 py-2 rounded-lg shadow-lg"
+          >
+            Contact Me!
+          </h2>
+        </div>
+        <p class="text-gray-400 pt-8">
+          Reach out via email at
+          <a
+            href="mailto:alwen1928@gmail.com"
+            class="text-blue-400 hover:underline"
+            >alwen1928@gmail.com</a
+          >.
+        </p>
+      </section>
+      <section
+        id="playground"
+        class="mb-16 p-6 bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-lg shadow-lg"
+      >
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-3xl font-semibold bg-gradient-to-r from-blue-500 to-blue-700 text-white px-3 py-2 rounded-lg shadow-lg"
+          >
+            Playground
+          </h2>
+        </div>
+        <input
+          id="command"
+          class="w-full p-4 mt-4 bg-white border border-blue-300 text-gray-700 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          type="text"
+          placeholder="/* Enter your Command here! */"
+        />
+
+        <button
+          onclick="applyChanges()"
+          class="mt-6 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-2 rounded-lg shadow-md hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 transition"
+        >
+          Apply Changes
+        </button>
+      </section>
+      <section id="dynamic" class="text-black"></section>
+
+      <section id="projects" class="mb-16">
+        <!-- Section Title -->
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-3xl font-semibold bg-gradient-to-r from-blue-500 to-blue-700 text-white px-3 py-2 rounded-lg shadow-lg mb-4"
+          >
+            Projects
+          </h2>
+        </div>
+        <!-- Cards Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="project-cards">
+          <!-- Project Card -->
+          <a
+            href="#"
+            class="group relative block h-64 sm:h-80 lg:h-96 bg-gradient-to-b from-gray-800 via-gray-900 to-black"
+          >
+            <span
+              class="absolute inset-0 border-2 border-dashed border-gray-700 rounded-lg"
+            ></span>
+            <div
+              class="relative flex h-full transform items-end border-2 border-gray-700 rounded-lg bg-pattern text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+            >
+              <!-- Initially Visible Content -->
+              <div
+                class="p-6 transition-opacity group-hover:absolute group-hover:opacity-0"
+              >
+                <h3 class="text-xl font-bold sm:text-2xl">
+                  Educational Institute Website
+                </h3>
+              </div>
+              <!-- Hover Content -->
+              <div
+                class="absolute p-6 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100"
+              >
+                <h3 class="text-xl font-bold sm:text-2xl">
+                  Educational Institute Website
+                </h3>
+                <p class="mt-4 text-sm sm:text-base">
+                  This was my first project that was mentored by my cousin. It
+                  is a simple coaching institute website but I learned the
+                  basics on web development from this project. This project
+                  taught me the imortance of errors. I learned how to debug and
+                  solve errors and that too in Non-ChatGPT era.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Duplicate and modify for other projects -->
+          <a
+            href="#"
+            class="group relative block h-64 sm:h-80 lg:h-96 bg-gradient-to-b from-gray-800 via-gray-900 to-black"
+          >
+            <span
+              class="absolute inset-0 border-2 border-dashed border-gray-700 rounded-lg"
+            ></span>
+            <div
+              class="relative flex h-full transform items-end border-2 border-gray-700 rounded-lg bg-pattern text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+            >
+              <div
+                class="p-6 transition-opacity group-hover:absolute group-hover:opacity-0"
+              >
+                <h3 class="text-xl font-bold sm:text-2xl">
+                  Vendor Management API
+                </h3>
+              </div>
+              <div
+                class="absolute p-6 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100"
+              >
+                <h3 class="text-xl font-bold sm:text-2xl">
+                  Vendor Management API
+                </h3>
+                <p class="mt-4 text-sm sm:text-base">
+                  A vendor management API that allows users to manage vendors,
+                  products, and orders. Built using Django Rest Framework and
+                  deployed on AWS. Also deployed a Postgres DB on RDS for data
+                  storage.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="group relative block h-64 sm:h-80 lg:h-96 bg-gradient-to-b from-gray-800 via-gray-900 to-black"
+          >
+            <span
+              class="absolute inset-0 border-2 border-dashed border-gray-700 rounded-lg"
+            ></span>
+            <div
+              class="relative flex h-full transform items-end border-2 border-gray-700 rounded-lg bg-pattern text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2"
+            >
+              <div
+                class="p-6 transition-opacity group-hover:absolute group-hover:opacity-0"
+              >
+                <h3 class="text-xl font-bold sm:text-2xl">
+                  Real-Time Location Tracking
+                </h3>
+              </div>
+              <div
+                class="absolute p-6 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100"
+              >
+                <h3 class="text-xl font-bold sm:text-2xl">
+                  Real-Time Location Tracking
+                </h3>
+                <p class="mt-4 text-sm sm:text-base">
+                  Out of curiosity to learn Kafka and to know how the location
+                  of Zomato/Swiggy/Uber drivers is tracked, I Built a real-time
+                  location tracker using Django, Kafka, and Google Maps API,
+                  visualizing updates every 5 seconds. Deployed on Railway.app
+                  and managed Kafka with Aiven for scalable streaming. I'm not
+                  good at frontend, so only console output is the UI.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      id="footer"
+      class="w-full bg-gray-900 shadow-lg top-0 z-50 hidden lg:block"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center p-4"
+      >
+        <!-- Name and Avatar Section -->
+        <div class="flex items-center space-x-4 mb-4 md:mb-0">
+          <!-- Avatar -->
+          <img
+            src="/static/avatar.jpeg"
+            alt="Avatar"
+            class="w-12 h-12 rounded-full shadow-md border-2 border-gray-700"
+          />
+          <!-- Name -->
+          <div>
+            <h1
+              class="text-2xl font-extrabold text-white bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg px-4 py-2 tracking-wide shadow-md"
+            >
+              Arvind Srivastav
+            </h1>
+            <p class="text-sm font-medium text-gray-400 italic">aka Alwen</p>
+          </div>
+        </div>
+        <!-- Navigation Section -->
+        <nav class="flex flex-wrap items-center space-x-4">
+          <a
+            href="#about"
+            class="nav-link text-gray-300 hover:text-blue-300 transition duration-200 ease-in-out"
+          >
+            About
+          </a>
+          <a
+            href="#education"
+            class="nav-link text-gray-300 hover:text-blue-300 transition duration-200 ease-in-out"
+          >
+            Education
+          </a>
+          <a
+            href="#work"
+            class="nav-link text-gray-300 hover:text-blue-300 transition duration-200 ease-in-out"
+          >
+            Work
+          </a>
+          <a
+            href="#skills"
+            class="nav-link text-gray-300 hover:text-blue-300 transition duration-200 ease-in-out"
+          >
+            Skills
+          </a>
+          <a
+            href="#contact"
+            class="nav-link text-gray-300 hover:text-blue-300 transition duration-200 ease-in-out"
+          >
+            Contact
+          </a>
+          <a
+            href="/resume.pdf"
+            download
+            class="text-gray-300 hover:text-blue-300 transition duration-200 ease-in-out"
+          >
+            Resume
+            <i
+              class="fas fa-download text-gray-300 hover:text-blue-300 transition duration-200 ease-in-out"
+            ></i>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 group lg:hidden" data-dial-init>
+      <div
+        id="footer-speed-dial"
+        class="flex flex-col items-center hidden mb-4 space-y-3 transition-transform transform translate-y-10 opacity-0 group-focus-within:translate-y-0 group-focus-within:opacity-100"
+      >
+        <!-- Avatar -->
+        <button
+          type="button"
+          class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+        >
+          <img
+            src="/static/avatar.jpeg"
+            alt="Avatar"
+            class="w-full h-full rounded-full"
+          />
+        </button>
+        <!-- About -->
+        <button
+          type="button"
+          class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+        >
+          <i class="fas fa-user text-blue-700"></i>
+        </button>
+        <!-- Education -->
+        <button
+          type="button"
+          class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+        >
+          <i class="fas fa-graduation-cap text-blue-700"></i>
+        </button>
+        <!-- Work -->
+        <button
+          type="button"
+          class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+        >
+          <i class="fas fa-briefcase text-blue-700"></i>
+        </button>
+        <!-- Skills -->
+        <button
+          type="button"
+          class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+        >
+          <i class="fas fa-tools text-blue-700"></i>
+        </button>
+        <!-- Contact -->
+        <button
+          type="button"
+          class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+        >
+          <i class="fas fa-envelope text-blue-700"></i>
+        </button>
+        <!-- Resume -->
+        <button
+          type="button"
+          class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+        >
+          <i class="fas fa-file-pdf text-blue-700"></i>
+        </button>
+      </div>
+      <!-- Main Speed Dial Button -->
+      <button
+        type="button"
+        data-dial-toggle="footer-speed-dial"
+        aria-controls="footer-speed-dial"
+        aria-expanded="false"
+        class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
+      >
+        <svg
+          class="w-6 h-6 transition-transform group-hover:rotate-45"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 18 18"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 1v16M1 9h16"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <script src="/static/dynamic_script.js" defer></script>
+    <script src="/static/scripts.js" defer></script>
+  </body>
+</html>
