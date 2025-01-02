@@ -11,7 +11,7 @@ async function applyChanges() {
     const changeType = isCSS ? "css" : "js";
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/apply-changes/", {
+        const response = await fetch("https://alwen.up.railway.app/apply-changes/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -98,7 +98,7 @@ async function fetchAnimeGif() {
     btn.textContent = "Loading...";
 
     try {
-      const response = await fetch("http://localhost:8000/anime-of-the-day");
+      const response = await fetch("https://alwen.up.railway.app/anime-of-the-day");
       if (response.ok) {
         const data = await response.json();
         if (data.gif_url) {
@@ -127,3 +127,29 @@ async function fetchAnimeGif() {
   }
     );
    
+    function scrollToSection(sectionId) {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+    document.getElementById('speed-dial-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('footer-speed-dial');
+      
+      // Toggle the hidden class for visibility
+      menu.classList.toggle('hidden');
+      
+      // Animate the opacity and scale properties
+      if (menu.classList.contains('hidden')) {
+        // If the menu is hidden, reset opacity and scale
+        menu.classList.remove('opacity-100', 'scale-100');
+        menu.classList.add('opacity-0', 'scale-90');
+      } else {
+        // If the menu is visible, apply smooth transition for opacity and scale
+        setTimeout(() => {
+          menu.classList.remove('opacity-0', 'scale-90');
+          menu.classList.add('opacity-100', 'scale-100');
+        }, 10); // Delay to ensure class toggle happens after visibility change
+      }
+    });
+    

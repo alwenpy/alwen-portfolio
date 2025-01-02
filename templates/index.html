@@ -390,14 +390,33 @@
           </h2>
         </div>
         <p class="text-gray-400 pt-8">
-          Reach out via email at
+          Want to chat? Drop me a line via email at
           <a
             href="mailto:alwen1928@gmail.com"
             class="text-blue-400 hover:underline"
             >alwen1928@gmail.com</a
+          >
+          >, or hit me up on
+          <a
+            href="https://www.linkedin.com/in/alwenpy"
+            class="text-blue-400 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          or slide into my DMs on
+          <a
+            href="https://www.instagram.com/oyealwen"
+            class="text-blue-400 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram </a
           >.
         </p>
       </section>
+
       <section
         id="playground"
         class="mb-16 p-6 bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-lg shadow-lg"
@@ -604,7 +623,7 @@
             Contact
           </a>
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1aj4pQMjdlIfG89d3M4mgX5MDbCCbOQ84/view?usp=drive_link"
             download
             class="text-gray-300 hover:text-blue-300 transition duration-200 ease-in-out"
           >
@@ -616,16 +635,17 @@
         </nav>
       </div>
     </footer>
-
     <div class="fixed bottom-6 right-6 group lg:hidden" data-dial-init>
+      <!-- Speed Dial Menu -->
       <div
         id="footer-speed-dial"
-        class="flex flex-col items-center hidden mb-4 space-y-3 transition-transform transform translate-y-10 opacity-0 group-focus-within:translate-y-0 group-focus-within:opacity-100"
+        class="flex flex-col items-center mb-4 space-y-3 opacity-0 scale-90 transform transition-all duration-300 ease-in-out hidden"
       >
         <!-- Avatar -->
         <button
           type="button"
           class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+          onclick="scrollToSection('#avatar')"
         >
           <img
             src="/static/avatar.jpeg"
@@ -637,6 +657,7 @@
         <button
           type="button"
           class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+          onclick="scrollToSection('#about')"
         >
           <i class="fas fa-user text-blue-700"></i>
         </button>
@@ -644,6 +665,7 @@
         <button
           type="button"
           class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+          onclick="scrollToSection('#education')"
         >
           <i class="fas fa-graduation-cap text-blue-700"></i>
         </button>
@@ -651,6 +673,7 @@
         <button
           type="button"
           class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+          onclick="scrollToSection('#work')"
         >
           <i class="fas fa-briefcase text-blue-700"></i>
         </button>
@@ -658,6 +681,7 @@
         <button
           type="button"
           class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+          onclick="scrollToSection('#skills')"
         >
           <i class="fas fa-tools text-blue-700"></i>
         </button>
@@ -665,27 +689,30 @@
         <button
           type="button"
           class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+          onclick="scrollToSection('#contact')"
         >
           <i class="fas fa-envelope text-blue-700"></i>
         </button>
         <!-- Resume -->
-        <button
-          type="button"
-          class="w-[56px] h-[56px] bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+        <a
+          href="https://drive.google.com/file/d/1aj4pQMjdlIfG89d3M4mgX5MDbCCbOQ84/view?usp=drive_link"
+          download
+          class="w-[56px] h-[56px] flex items-center justify-center bg-white rounded-full border border-gray-200 shadow-md dark:border-gray-600 hover:shadow-lg"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <i class="fas fa-file-pdf text-blue-700"></i>
-        </button>
+        </a>
       </div>
+
       <!-- Main Speed Dial Button -->
       <button
         type="button"
-        data-dial-toggle="footer-speed-dial"
-        aria-controls="footer-speed-dial"
-        aria-expanded="false"
-        class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
+        id="speed-dial-toggle"
+        class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 group"
       >
         <svg
-          class="w-6 h-6 transition-transform group-hover:rotate-45"
+          class="w-6 h-6 transition-transform duration-300 group-hover:rotate-45"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 18 18"

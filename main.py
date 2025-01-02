@@ -5,7 +5,6 @@ from pydantic import BaseModel
 from fastapi.templating import Jinja2Templates
 import google.generativeai as genai
 from fastapi.staticfiles import StaticFiles
-
 import requests,random
 
 GEMINI_API_KEY = "AIzaSyDWuh6JDfGppgGyKCHRKpKMfFmP0EPYpe8"
