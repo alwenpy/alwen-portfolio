@@ -188,3 +188,5 @@ async function fetchAnimeGif() {
       // Observe the header
       observer.observe(header);
     });
+
+    
