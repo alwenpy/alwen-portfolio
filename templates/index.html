@@ -59,7 +59,7 @@
     <!-- Floating Button -->
     <div
       id="scrollToFooter"
-      class="fixed transition bottom-24 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-blue-800  z-50 hidden lg:block"
+      class="fixed transition bottom-24 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-blue-800 z-50 hidden lg:block"
     >
       <a href="#footer">
         <span class="mr-2">↓</span>
@@ -74,14 +74,19 @@
           <h1
             class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
           >
-            <span class="relative group text-blue-500 terpsichorean-text">
+            <a
+              href="https://www.google.com/search?q=Terpsichorean+meaning"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="relative group text-blue-500 terpsichorean-text no-underline hover:no-underline"
+            >
               Terpsichorean
               <span
                 class="absolute mb-4 invisible tracking-wider group-hover:visible opacity-0 group-hover:opacity-100 w-max bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm rounded-lg py-3 px-4 shadow-lg transition-all duration-300 ease-[cubic-bezier(0.34, 1.56, 0.64, 1)]"
               >
                 Inspired by the muse of dance.
               </span>
-            </span>
+            </a>
             Backend Developer
           </h1>
           <p
@@ -395,7 +400,7 @@
             class="text-blue-400 hover:underline"
             >alwen1928@gmail.com</a
           >
-          >, or hit me up on
+          , or hit me up on
           <a
             href="https://www.linkedin.com/in/alwenpy"
             class="text-blue-400 hover:underline"
@@ -427,6 +432,8 @@
             Playground
           </h2>
         </div>
+
+        <!-- Input Field -->
         <input
           id="command"
           class="w-full p-4 mt-4 bg-white border border-blue-300 text-gray-700 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
@@ -434,6 +441,20 @@
           placeholder="/* Enter your Command here! */"
         />
 
+        <!-- Explanation Note -->
+        <div class="flex items-start mt-2 text-sm text-gray-300 mt-4">
+          <div class="mr-2">
+            <i class="fas fa-info-circle text-blue-400 mr-2 fa-1x mb-2"></i>
+          </div>
+          <p>
+            The Playground allows you to experiment with the
+            <strong>JavaScript</strong> by entering commands into the input
+            field above. Click the <strong>Apply Changes</strong> button to see
+            the results dynamically applied below.
+          </p>
+        </div>
+
+        <!-- Button -->
         <button
           onclick="applyChanges()"
           class="mt-6 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-2 rounded-lg shadow-md hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 transition"
@@ -441,6 +462,8 @@
           Apply Changes
         </button>
       </section>
+
+      <!-- Dynamic Content Section -->
       <section id="dynamic" class="text-black"></section>
 
       <section id="projects" class="mb-16">
