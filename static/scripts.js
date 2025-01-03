@@ -166,4 +166,25 @@ async function fetchAnimeGif() {
         }, 10); // Delay to ensure class toggle happens after visibility change
       }
     });
-   
+    document.addEventListener("DOMContentLoaded", () => {
+      const scrollToFooterBtn = document.getElementById("scrollToFooter");
+      const header = document.getElementById("footer");
+  
+      // Set up IntersectionObserver
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            scrollToFooterBtn.style.display = "none";
+          } else {
+            scrollToFooterBtn.style.display = "flex";
+          }
+        },
+        {
+          root: null, // Use the viewport as the root
+          threshold: 0.1, // Trigger when 10% of the header is visible
+        }
+      );
+  
+      // Observe the header
+      observer.observe(header);
+    });
