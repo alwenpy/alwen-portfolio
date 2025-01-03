@@ -1,11 +1,9 @@
-/* tilt the headings with an angle */
 
 .terpsichorean-text {
   display: inline-block;
   transform: rotate(-5deg);
   transition: transform 0.5s;
 }
-/* on hover rotate 0 degree with transition */
 .terpsichorean-text:hover {
   transform: rotate(0deg);
   transition: transform 0.5s;

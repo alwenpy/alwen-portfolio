@@ -166,4 +166,4 @@ async function fetchAnimeGif() {
         }, 10); // Delay to ensure class toggle happens after visibility change
       }
     });
-    
+   

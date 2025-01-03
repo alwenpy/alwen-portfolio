@@ -57,15 +57,15 @@
     </header>
 
     <!-- Floating Button -->
-    <a
-      href="#footer"
+    <div
       id="scrollToFooter"
-      class="fixed transition bottom-24 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-blue-800 transition flex items-center z-50"
+      class="fixed transition bottom-24 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-blue-800  z-50 hidden lg:block"
     >
-      <span class="mr-2">↓</span>
-      <span>looking for header?</span>
-    </a>
-
+      <a href="#footer">
+        <span class="mr-2">↓</span>
+        <span>looking for header?</span>
+      </a>
+    </div>
     <div class="max-w-6xl mx-auto p-6">
       <section
         class="bg-center bg-no-repeat bg-blend-multiply h-screen flex items-center justify-center mb-8"
@@ -76,7 +76,6 @@
           >
             <span class="relative group text-blue-500 terpsichorean-text">
               Terpsichorean
-              <!-- Tooltip -->
               <span
                 class="absolute mb-4 invisible tracking-wider group-hover:visible opacity-0 group-hover:opacity-100 w-max bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm rounded-lg py-3 px-4 shadow-lg transition-all duration-300 ease-[cubic-bezier(0.34, 1.56, 0.64, 1)]"
               >
@@ -231,7 +230,7 @@
               </svg>
             </span>
             <h3
-              class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+              class="mb-1 text-xl font-semibold text-gray-900 dark:text-white"
             >
               Tech BRJ - Backend Developer
             </h3>
@@ -273,9 +272,9 @@
               </svg>
             </span>
             <h3
-              class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+              class="mb-1 text-xl font-semibold text-gray-900 dark:text-white"
             >
-              ETHNO - An E-Commerce Marketplace
+              ETHNO - Backend Developer
             </h3>
             <time
               class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
@@ -313,9 +312,9 @@
               </svg>
             </span>
             <h3
-              class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+              class="mb-1 text-xl font-semibold text-gray-900 dark:text-white"
             >
-              MAXX CAPITAL - Real Estate Consultancy Firm
+              MAXX CAPITAL - Software Developer
             </h3>
             <time
               class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
@@ -492,7 +491,6 @@
             </div>
           </a>
 
-          <!-- Duplicate and modify for other projects -->
           <a
             href="#"
             class="group relative block h-64 sm:h-80 lg:h-96 bg-gradient-to-b from-gray-800 via-gray-900 to-black"
@@ -590,7 +588,6 @@
             <p class="text-sm font-medium text-gray-400 italic">aka Alwen</p>
           </div>
         </div>
-        <!-- Navigation Section -->
         <nav class="flex flex-wrap items-center space-x-4">
           <a
             href="#about"
@@ -636,7 +633,6 @@
       </div>
     </footer>
     <div class="fixed bottom-6 right-6 group lg:hidden" data-dial-init>
-      <!-- Speed Dial Menu -->
       <div
         id="footer-speed-dial"
         class="flex flex-col items-center mb-4 space-y-3 opacity-0 scale-90 transform transition-all duration-300 ease-in-out hidden"
